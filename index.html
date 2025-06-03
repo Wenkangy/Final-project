@@ -64,17 +64,17 @@
       <div class="container">
         <div class="text">
           <h1>
-          Hi, I'm <br />
-          <span>wenkang,</span><br />
-        </h1>
-        <div class="word-container">
-          a
-          <span id="word"></span>
-          <span class="cursor">|</span>
+            Hi, I'm <br />
+            <span>wenkang,</span><br />
+          </h1>
+          <div class="word-container">
+            a
+            <span id="word"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p>Student at Portland State University</p>
         </div>
-        <p> Student at Portland State University</p>
-        </div>
-        
+
         <div class="img">
           <img src="image/1745181884386.jpg" alt="My pictue" />
         </div>
@@ -83,24 +83,72 @@
     <!-- About me -->
     <section id="about">
       <div class="about container">
-        <h2>About me</h2>
-        <div clad="about-content">
-          <div class="about-me">
+        <h2 class="section-title">About me</h2>
+        <div class="about-me">
+          <p>
+            I am a student at PSU, majoring in Computer Science. I have a
+            passion for programming and game development. I am always eager to
+            learn new technologies and improve my skills.
+          </p>
+        </div>
+        <div class="corses">
+          <h2 class="section-title">Corses Taken</h2>
+
+          <div class="first">
+            <p class="date">April 2025 - NOW</p>
+            <p class="code">CS-493 forensics</p>
             <p>
-              I am a student at PSU, majoring in Computer Science. I have a
-              passion for programming and game development. I am always eager to
-              learn new technologies and improve my skills.
+              hands-on approach to the investigation of criminal incidents in
+              which computers or computer technology play a significant or
+              interesting role. Familiarization with the core computer science
+              theory and practical skills necessary to perform rudimentary
+              computer forensic investigations, understanding the role of
+              technology in investigating computer-based crime, and preparation
+              to deal with investigative bodies
             </p>
           </div>
-          <div class="classes container">
+          <div class="second">
+            <p class="date">April 2025 - NOW</p>
+            <p class="code">CS-496 network securit</p>
+            <p>
+              Focus on network security including a review of various forms of
+              network attacks; a review of basic techniques in applied
+              cryptography, and secure protocols will be covered including
+              network-layer security and various application-layer secure
+              protocols. Also covers network-side security management including
+              both passive measures, as well as active intrusion detection and
+              response.
+            </p>
+          </div>
+          <div class="third">
+            <p class="date">October 2024 - December 2024</p>
+            <p class="code">CS-486 data base</p>
+            <p>
+              fundamental concepts of database management systems using
+              primarily the relational model. Schema design and refinement.
+              Query languages. Database application development environments.
+              Overview of physical data organization, query optimization and
+              processing, physical design, security, and transactions used in
+              recovery and concurrency control.
+            </p>
+          </div>
+          <div class="fourth">
+            <p class="date">October 2024 - December 2024</p>
+            <p class="code">Mth-261 Linear Algebra</p>
+            <p>
+              Systems of linear equations, linear transformations, matrix
+              algebra, vector spaces, and determinants.
+            </p>
+          </div>
+
+          <!-- courses taken
             <ul>
               <li>cs 163</li>
               <li>cs 164</li>
               <li>cs 165</li>
               <li>cs 166</li>
               <li>cs 167</li>
-            </ul>
-          </div>
+            </ul> -->
         </div>
       </div>
     </section>
@@ -110,7 +158,7 @@
     <!-- Skills -->
     <section id="skills">
       <div class="skills container">
-        <h2>Skills</h2>
+        <h2 class="section-title">Skills</h2>
         <h3>my skill level</h3>
         <div class="skills-progress">
           <div class="skill">
@@ -145,22 +193,22 @@
     <!-- projects -->
     <section id="projects">
       <div class="projects container">
-        <h2>Projects</h2>
+        <h2 class="section-title">My Projects</h2>
         <div class="project-list">
           <div class="project-item">
-            <h3>Project 1</h3>
+            <h3 class="project-itme">Project 1</h3>
             <img src="" alt="chat app" />
             <p>Description of project 1.</p>
             <a href="#">github</a>
           </div>
           <div class="project-item">
-            <h3>Project 2</h3>
+            <h3 class="project-itme">Project 2</h3>
             <img src="" alt="map generator" />
             <p>Description of project 2.</p>
             <a href="#">github</a>
           </div>
           <div class="project-item">
-            <h3>Project 3</h3>
+            <h3 class="project-itme">Project 3</h3>
             <img src="" alt="game" />
             <p>Description of project 3.</p>
             <a href="#">github</a>
@@ -171,63 +219,69 @@
 
     <!-- contact -->
     <section id="contact">
-      <form
-        action="forms/contact.php"
-        method="post"
-        class="php-email-form"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="row gy-4">
-          <div class="col-md-6">
-            <label for="name-field" class="pb-2">Your Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name-field"
-              class="form-control"
-              required=""
-            />
-          </div>
+      <div class="contact container">
+        <h2 class="section-title">
+          Contact <br />
+          <span>Call or Write anytime</span>
+        </h2>
+        <form
+          action="forms/contact.php"
+          method="post"
+          class="php-email-form"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name-field"
+                class="form-control"
+                required=""
+              />
+            </div>
 
-          <div class="col-md-6">
-            <label for="email-field" class="pb-2">Your Email</label>
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              id="email-field"
-              required=""
-            />
-          </div>
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2">Your Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email-field"
+                required=""
+              />
+            </div>
 
-          <div class="col-md-12">
-            <label for="subject-field" class="pb-2">Subject</label>
-            <input
-              type="text"
-              class="form-control"
-              name="subject"
-              id="subject-field"
-              required=""
-            />
-          </div>
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject-field"
+                required=""
+              />
+            </div>
 
-          <div class="col-md-12">
-            <label for="message-field" class="pb-2">Message</label>
-            <textarea
-              class="form-control"
-              name="message"
-              rows="10"
-              id="message-field"
-              required=""
-            ></textarea>
-          </div>
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2">Message</label>
+              <textarea
+                class="form-control"
+                name="message"
+                rows="10"
+                id="message-field"
+                required=""
+              ></textarea>
+            </div>
 
-          <div class="col-md-12 text-center">
-            <button type="submit">Send Message</button>
+            <div class="col-md-12 text-center">
+              <button type="submit">Send Message</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
 
     <script

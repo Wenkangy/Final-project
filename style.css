@@ -23,6 +23,15 @@ body {
   color: #6e6e6e;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+}
+.section-title {
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+
 .navbar {
   position: fixed;
   margin: 0 auto;
@@ -118,6 +127,19 @@ body {
   padding: 50px 0px;
 }
 
+#about  .date {
+  color: var(--black);
+  font-weight: 600;
+}
+
+
+#about .corses .code{
+  font-weight: 600;
+  color: var(--cyan);
+  font-size: 1.3rem;
+}
+
+
 #skills {
   background-color: var(--gray3);
   padding: 50px 0px;
@@ -125,6 +147,11 @@ body {
 
 #projects {
   padding: 50px 0px;
+}
+
+.project-itme{
+  color: var(--cyan);
+  font-weight: bold;
 }
 
 #contact {
