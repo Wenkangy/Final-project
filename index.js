@@ -1,16 +1,42 @@
-function myGame() {
-  let game = document.getElementById("game");
-  let canvas = document.createElement("canvas");
-  canvas.className="d-flex justify-content-center"
-  canvas.id = "cursor";
-  canvas.width = 480;
-  canvas.height = 280;
-  canvas.style.zIndex = 8;
-  canvas.style.position = "absolute";
-  canvas.style.border = "1px solid";
+const words = ["student", "learner", "Programmer", "game developer"];
 
- 
-  game.appendChild(canvas);
+let i = 0;
+let speed = 260;
+let counter = 0;
+
+function typeWriter() {
+  let word = words[i].split("");
+  let loopTyping = function () {
+    if (word.length > 0) {
+      document.getElementById("word").innerHTML += word.shift();
+    } else {
+      deleteWord();
+      return false;
+    }
+    counter = setTimeout(loopTyping, speed);
+  };
+  loopTyping();
 }
 
-myGame();
+function deleteWord() {
+  let word = words[i].split("");
+  let loopDeleting = function () {
+    if (word.length > 0) {
+      word.pop();
+      document.getElementById("word").innerHTML = word.join("");
+    } else {
+      if(words.length > (i+1)){
+        i++;
+      }
+      else{
+        i= 0;
+      }
+      typeWriter();
+      return false;
+    }
+    counter = setTimeout(loopDeleting, speed);
+  };
+  loopDeleting();
+}
+
+typeWriter();
