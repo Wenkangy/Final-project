@@ -3,12 +3,13 @@
   --gray1: #333333;
   --gray2: #555555;
   --gray3: #222222;
+  --gray4: #7a7a7a;
 
   --black: #080808;
   --teal: #006060;
   --lightteal: #008080;
   --purple: #800080;
-  --darkblue: #3a25fa;
+  --lightblue: rgb(127, 238, 253);
   --cyan: #17a2b8;
   --violetred: #c71585;
   --red: #ff0000;
@@ -190,39 +191,46 @@ h6 {
   background-color: var(--gray3);
   padding: 50px 0px;
 }
-
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+#skills .container .section-title{
+  color: var(--cyan);
+  text-align: center;
+  font-size: 20px;
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
+#skills .container p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: var(--white);
+  padding-bottom: 40px;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+#skills .container .skill h4 {
+  color: var(--cyan);
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 30px;
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--white), transparent 90%);
-  height: 10px;
+#skills .container .skill .skill-label{
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  color: var(--white);
+  padding-bottom: 10px;
+
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--cyan);
+#skills .container .progress {
+  margin-bottom: 20px;
+  background-color: rgb(155, 155, 155);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#skills .progress-bar {
+ background-color: var(--lightblue);
+ border-radius: 10px;
 }
 
 .project-item {
@@ -233,4 +241,20 @@ h6 {
 #contact {
   background-color: var(--gray3);
   padding: 50px 0px;
+}
+
+#contact .container .section-title{
+  color: var(--cyan);
+  text-align: center;
+  font-size: 20px;
+}
+#contact .container p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: var(--white);
+}
+#contact .container p span {
+  font-weight: bold;
+  color: var(--cyan);
 }

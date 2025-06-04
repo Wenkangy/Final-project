@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <nav class="navbar fixed-top navbar-expand-lg">
@@ -143,12 +144,11 @@
     </section>
     <!-- Skills -->
     <section id="skills">
-      <div class="skills container">
+      <div class="container">
         <h2 class="section-title">Skills</h2>
-        <h3>my skill <span>level</span></h3>
+        <p>My skill <span>level</span></p>
         <div class="-skillsprogress">
-          <div class="skill">
-            <h4>Programming Languages</h4>
+          <!-- <h4>Programming Languages</h4>
             <ul>
               <li>Java</li>
               <li>C++</li>
@@ -171,6 +171,51 @@
               <li>Unreal Engine</li>
               <li>C#</li>
             </ul>
+          </div>-->
+          <div class="skill">
+            <h4>Programming Languages</h4>
+            <div class="skill-label">Java<span>50%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+            <div class="skill-label">JavaScript <span>20%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 20%"></div>
+            </div>
+            <div class="skill-label">C++<span>66%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 66%"></div>
+            </div>
+            <div class="skill-label">Python<span>45%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h4>Web Development</h4>
+            <div class="skill-label">HTML <span>50%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+            <div class="skill-label">CSS <span>35%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 35%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h4>Game Development</h4>
+            <div class="skill-label">Unity <span>20%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 20%"></div>
+            </div>
+            <div class="skill-label">Godot <span>30%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 30%"></div>
+            </div>
+            <div class="skill-label">C# <span>40%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 40%"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -205,11 +250,11 @@
 
     <!-- contact -->
     <section id="contact">
-      <div class="contact container">
+      <div class="container">
         <h2 class="section-title">
-          Contact <br />
-          <span>Call or Write anytime</span>
+          Contact
         </h2>
+        <p>Call or Write <span>anytime</span></p>
         <form
           action="forms/contact.php"
           method="post"
