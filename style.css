@@ -4,7 +4,6 @@
   --gray2: #555555;
   --gray3: #222222;
 
-
   --black: #080808;
   --teal: #006060;
   --lightteal: #008080;
@@ -17,20 +16,23 @@
   --green: #006400;
 }
 
-
 body {
   font-family: "Lato", sans-serif;
   color: #6e6e6e;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--white);
 }
 .section-title {
   color: var(--cyan);
   font-weight: bold;
 }
-
 
 .navbar {
   position: fixed;
@@ -77,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 150px 0px 50px;
 }
 
-
 #intro h1 {
   color: var(--white);
   font-weight: 900;
@@ -86,7 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 #intro h1 span {
   color: var(--cyan);
 }
-
 
 #intro .dinamic-list ul {
   padding: 0;
@@ -98,23 +98,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 60px;
 }
 
-#intro .img img{
+#intro .img img {
   padding-top: 10px;
   width: 100%;
 }
- 
+
 .word-container {
   color: var(--white);
   font-size: 60px;
   font-weight: bold;
- 
 }
-#intro .word-container .cursor  {
+#intro .word-container .cursor {
   animation: blink 0.5s infinite;
 }
 
-@keyframes blink{
-   50% { opacity: 0; }
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 #intro p {
@@ -127,34 +128,109 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px 0px;
 }
 
-#about  .date {
+#about .date {
   color: var(--black);
   font-weight: 600;
 }
 
+#about .corses {
+  padding: 40px;
+}
 
-#about .corses .code{
+#about .corses p {
+  margin-bottom: 0;
+}
+
+#about .corses-title {
+  color: var(--cyan);
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+#about .corses .item {
+  border-left: 2px solid var(--cyan);
+  padding: 40px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#about .corses .item .date::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: var(--cyan);
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 3.1rem;
+}
+
+#about .corses .item .date::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -11px;
+  top: 2.6rem;
+}
+
+#about .corses .code {
   font-weight: 600;
   color: var(--cyan);
   font-size: 1.3rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 
 #skills {
   background-color: var(--gray3);
   padding: 50px 0px;
 }
 
-#projects {
-  padding: 50px 0px;
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
 }
 
-.project-itme{
+.skills .progress .skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: color-mix(in srgb, var(--white), transparent 90%);
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--cyan);
+}
+
+.project-item {
   color: var(--cyan);
   font-weight: bold;
 }
 
 #contact {
-  background-color:var(--gray3);
+  background-color: var(--gray3);
   padding: 50px 0px;
 }
