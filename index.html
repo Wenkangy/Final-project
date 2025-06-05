@@ -8,12 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/0e035b9984.js"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       crossorigin="anonymous"
-    ></script>
+    />
     <script defer src="index.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -76,7 +73,7 @@
         </div>
 
         <div class="img">
-          <img src="image/1745181884386.jpg" alt="My pictue" />
+          <img src="image/picture.jpg" alt="My pictue" />
         </div>
       </div>
     </section>
@@ -94,8 +91,8 @@
         <h2 class="corses-title">Corses Taken</h2>
         <div class="corses">
           <div class="item">
-            <p class="date">April 2025 - NOW</p>
-            <p class="code">CS-493 forensics</p>
+            <h3 class="date">April 2025 - NOW</h3>
+            <h4 class="code">CS-493 forensics</h4>
             <p>
               hands-on approach to the investigation of criminal incidents in
               which computers or computer technology play a significant or
@@ -107,8 +104,8 @@
             </p>
           </div>
           <div class="item">
-            <p class="date">April 2025 - NOW</p>
-            <p class="code">CS-496 network securit</p>
+            <h3 class="date">April 2025 - NOW</h3>
+            <h4 class="code">CS-496 network securit</h4>
             <p>
               Focus on network security including a review of various forms of
               network attacks; a review of basic techniques in applied
@@ -120,8 +117,8 @@
             </p>
           </div>
           <div class="item">
-            <p class="date">October 2024 - December 2024</p>
-            <p class="code">CS-486 data base</p>
+            <h3 class="date">October 2024 - December 2024</h3>
+            <h4 class="code">CS-486 data base</h4>
             <p>
               fundamental concepts of database management systems using
               primarily the relational model. Schema design and refinement.
@@ -132,8 +129,8 @@
             </p>
           </div>
           <div class="item">
-            <p class="date">October 2024 - December 2024</p>
-            <p class="code">Mth-261 Linear Algebra</p>
+            <h3 class="date">October 2024 - December 2024</h3>
+            <h4 class="code">Mth-261 Linear Algebra</h4>
             <p>
               Systems of linear equations, linear transformations, matrix
               algebra, vector spaces, and determinants.
@@ -146,32 +143,8 @@
     <section id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
-        <p>My skill <span>level</span></p>
+        <h3>My skill <span>level</span></h3>
         <div class="-skillsprogress">
-          <!-- <h4>Programming Languages</h4>
-            <ul>
-              <li>Java</li>
-              <li>C++</li>
-              <li>Python</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="skill">
-            <h4>Web Development</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Node.js</li>
-            </ul>
-          </div>
-          <div class="skill">
-            <h4>Game Development</h4>
-            <ul>
-              <li>Unity</li>
-              <li>Unreal Engine</li>
-              <li>C#</li>
-            </ul>
-          </div>-->
           <div class="skill">
             <h4>Programming Languages</h4>
             <div class="skill-label">Java<span>50%</span></div>
@@ -223,26 +196,43 @@
 
     <!-- projects -->
     <section id="projects">
-      <div class="projects container">
+      <div class="container">
         <h2 class="section-title">My Projects</h2>
-        <div class="project-list">
-          <div class="project-item">
-            <h3 class="project-itme">Project 1</h3>
-            <img src="" alt="chat app" />
-            <p>Description of project 1.</p>
-            <a href="#">github</a>
+        <div class="row pt-4 project-list">
+          <div class="col-lg-4 col-md-6 project-item">
+            <h3 class="project-name">Project 1</h3>
+            <img
+              src="image/chat-app.png"
+              alt="chat app"
+              class="pt-3 img-fluid"
+            />
+            <div class="project-info">
+              <p>Description of project 1.</p>
+              <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+              <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
           </div>
-          <div class="project-item">
-            <h3 class="project-itme">Project 2</h3>
-            <img src="" alt="map generator" />
-            <p>Description of project 2.</p>
-            <a href="#">github</a>
+          <div class="col-lg-4 col-md-6 project-item">
+            <h3 class="project-name">Project 2</h3>
+            <img
+              src="image/folium.png"
+              alt="map generator"
+              class="pt-3 img-fluid"
+            />
+            <div class="project-info">
+              <p>Description of project 2.</p>
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
           </div>
-          <div class="project-item">
-            <h3 class="project-itme">Project 3</h3>
-            <img src="" alt="game" />
-            <p>Description of project 3.</p>
-            <a href="#">github</a>
+          <div class="col-lg-4 col-md-6 project-item">
+            <h3 class="project-name">Project 3</h3>
+            <img src="image/folium.png" alt="game" class="pt-3 img-fluid" />
+            <div class="project-info">
+              <p>Description of project 3.</p>
+             <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -251,70 +241,100 @@
     <!-- contact -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        <p>Call or Write <span>anytime</span></p>
-        <form
-          action="forms/contact.php"
-          method="post"
-          class="php-email-form"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Your Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name-field"
-                class="form-control"
-                required=""
-              />
-            </div>
+        <h2 class="section-title">Contact</h2>
+        <h3>via <span>email</span> or <span>number</span></h3>
+        <div class="row">
+          <div class="form col-md-7 col-lg-8">
+            <form>
+              <div class="form-group">
+                <label for="name-field" class="item">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name-field"
+                  class="form-control"
+                  required=""
+                />
+              </div>
 
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">Your Email</label>
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email-field"
-                required=""
-              />
-            </div>
+              <div class="form-group">
+                <label for="email-field" class="item">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email-field"
+                  required=""
+                />
+              </div>
 
-            <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Subject</label>
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                id="subject-field"
-                required=""
-              />
-            </div>
+              <div class="form-group">
+                <label for="subject-field" class="item">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject-field"
+                  required=""
+                />
+              </div>
 
-            <div class="col-md-12">
-              <label for="message-field" class="pb-2">Message</label>
-              <textarea
-                class="form-control"
-                name="message"
-                rows="10"
-                id="message-field"
-                required=""
-              ></textarea>
-            </div>
+              <div class="form-group">
+                <label for="message-field" class="item">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  id="message-field"
+                  required=""
+                ></textarea>
+              </div>
 
-            <div class="col-md-12 text-center">
-              <button type="submit">Send Message</button>
-            </div>
+              <div class="button">
+                <button type="submit" class="submit">Send Message</button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
+        <div class="contacts">
+          <div class="social-media">
+            <h4>Social Media</h4>
+            <a
+              href="https://www.instagram.com/"
+              class="me-2 text-reset"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/"
+              class="me-2 text-reset"
+              aria-label="facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.x.com/"
+              class="me-2 text-reset"
+              aria-label="twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              class="me-2 text-reset"
+              aria-label="linkedin"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="item email">
+            <h4>Contact me via email</h4>
+            <span>wenkang@exmaple.com</span>
+          </div>
+          <div class="item phone">
+            <h4>My phone</h4>
+            <span>+1 999 999 9999</span>
+          </div>
+        </div>
       </div>
     </section>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

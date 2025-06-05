@@ -1,4 +1,4 @@
-const words = ["student", "learner", "Programmer", "game developer"];
+const words = ["student", "learner", "Programmer", "game dev"];
 
 let i = 0;
 let speed = 260;
