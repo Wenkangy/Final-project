@@ -251,14 +251,12 @@ h6 {
 }
 
 #projects {
-
   padding: 50px 0px;
 }
 #projects .project-name {
   color: var(--cyan);
   font-weight: bold;
 }
-
 
 .project-item {
   position: relative;
@@ -271,17 +269,15 @@ h6 {
 }
 
 .project-item:hover img {
-  transform: scale(1.2);
-  filter: brightness(0.5);
+  transform: scale(1.1);
+  filter: brightness(0.2);
 }
 
 .project-item .project-info {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 50px;
-  color: white;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the content */
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -289,6 +285,30 @@ h6 {
 
 .project-item:hover .project-info {
   opacity: 1;
+}
+
+
+.project-info a {
+  
+  display: inline-block;
+  margin: 10px; /* Adds spacing between icons */
+
+}
+
+.project-info i{
+    font-size: 24px; /* Adjust icon size */
+  color: var(--white);
+
+}
+
+.project-info p {
+  margin: 20px 0;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  color: var(--white);
+  background-color: #f12d3e;
+  border-radius: 10px;
 }
 
 
@@ -313,11 +333,9 @@ h6 {
   
 }
 
-#contact .container .form-group .item {
+#contact .container .form-group label {
   color: var(--white);
-  padding: 20px 0px;
   font-size: 20px;
-
 }
 
 #contact .container .form-group input, 
