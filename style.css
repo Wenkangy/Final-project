@@ -1,9 +1,9 @@
 :root {
   --white: #ffffff;
   --gray0: rgb(214, 214, 214) #f5f5f5;
-  --gray1: #333333;
-  --gray2: #555555;
-  --gray3: #222222;
+  --gray1: #202020;
+  --gray2: #383838;
+  --gray3: #636363;
   --gray4: #7a7a7a;
   --gray5: #c4c4c4;
 
@@ -40,8 +40,10 @@ h6 {
 .navbar {
   position: fixed;
   margin: 0 auto;
-  padding: 30px 0;
-  background-color: var(--gray3);
+  padding: 20px 0;
+  background-color: var(--gray2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .navbar .navbar-brand {
@@ -49,6 +51,7 @@ h6 {
   top: 0;
   background-color: var(--cyan);
   padding: 20px 10px 0px 10px;
+  margin-left: 20px;
   margin-bottom: 100px;
   display: inline-block;
   color: var(--white);
@@ -78,7 +81,7 @@ h6 {
 }
 
 #intro {
-  background-color: #222222;
+  background-color: var(--gray3);
   padding: 150px 0px 50px;
 }
 
@@ -398,7 +401,7 @@ h6 {
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 10px;
+    font-size: 50px;
   }
   #intro {
     padding-bottom: 0;
@@ -412,11 +415,15 @@ h6 {
     width: 50%;
   }
   #intro .img {
-    margin-bottom: -50px;
+    margin-bottom: 50px;
     width: 50%;
   }
   #intro h1 {
     position: relative;
+  }
+
+  #navbar{
+    padding: 5px;
   }
 
 }
