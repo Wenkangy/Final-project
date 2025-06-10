@@ -1,4 +1,4 @@
-const words = ["student", "learner", "Programmer", "game dev"];
+const words = ["student", "Programmer", "game dev"];
 
 let i = 0;
 let speed = 260;
@@ -20,22 +20,19 @@ function typeWriter() {
 
 function deleteWord() {
   let word = words[i].split("");
-  let loopDeleting = function () {
+
+  function loopDeleting() {
     if (word.length > 0) {
       word.pop();
       document.getElementById("word").innerHTML = word.join("");
     } else {
-      if(words.length > (i+1)){
-        i++;
-      }
-      else{
-        i= 0;
-      }
+      i = (i + 1) % words.length; 
       typeWriter();
-      return false;
+      return;
     }
-    counter = setTimeout(loopDeleting, speed);
-  };
+    setTimeout(loopDeleting, speed);
+  }
+
   loopDeleting();
 }
 
