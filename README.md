@@ -1,4 +1,22 @@
-# Journal
+
+# How to Run the Program
+
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- A modern web browser (Chrome, Firefox, Edge)
+
+## Installation Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Wenkangy/Final-project.git
+   ```
+
+## Journal
 
 For the first part of building this site, I designed the page using a mobile-first approach. I focused on making sure the layout looked good on smaller screens like phones before scaling up. Once the main page was finished and working well on a smaller scree, I planned to use media queries to adjust the layout and styling for larger screens and different resolutions.
 
