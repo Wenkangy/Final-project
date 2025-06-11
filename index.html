@@ -1,411 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="index.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg">
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">W</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> About me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link"> Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link"> Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link"> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro -->
+    <section id="intro">
       <div class="container">
-        <a class="navbar-brand" href="#">W</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link"> About me</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link"> Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link"> Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link"> Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Intro -->
-  <section id="intro">
-    <div class="container">
-      <div class="text">
-        <h1>
-          Hi, I'm <br />
-          <span>wenkang,</span><br />
-        </h1>
-        <div class="word-container">
-          a
-          <span id="word"></span>
-          <span class="cursor">|</span>
-        </div>
-        <p>Student at Portland State University</p>
+        <div class="text">
+          <h1>
+            Hi, I'm <br />
+            <span>wenkang,</span><br />
+          </h1>
+          <div class="word-container">
+            a
+            <span id="word"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p>Student at Portland State University</p>
 
-        <div class="about-me">
-          <h2 class="section-title">About me</h2>
-          <p>
-            I am a student at PSU, majoring in Computer Science. I have a
-            passion for programming and game development. I am always eager to
-            learn new technologies and improve my skills.
-          </p>
+          <div class="about-me">
+            <h2 class="section-title">About me</h2>
+            <p>
+              I am a student at PSU, majoring in Computer Science. I have a
+              passion for programming and game development. I am always eager to
+              learn new technologies and improve my skills.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="img">
-        <img src="image/picture.jpg" alt="My pictue" />
-      </div>
-    </div>
-  </section>
-  <!-- About me -->
-  <section id="about">
-    <div class="container">
-      <h2 class="corses-title">Courses Taken</h2>
-      <div class="corses">
-        <div class="item">
-          <h3 class="date">April 2025 - NOW</h3>
-          <h4 class="code">CS-493 Forensics</h4>
-          <p>
-            hands-on approach to the investigation of criminal incidents in
-            which computers or computer technology play a significant or
-            interesting role. Familiarization with the core computer science
-            theory and practical skills necessary to perform rudimentary
-            computer forensic investigations, understanding the role of
-            technology in investigating computer-based crime, and preparation
-            to deal with investigative bodies
-          </p>
-        </div>
-        <div class="item">
-          <h3 class="date">April 2025 - NOW</h3>
-          <h4 class="code">CS-496 Network Security</h4>
-          <p>
-            Focus on network security including a review of various forms of
-            network attacks; a review of basic techniques in applied
-            cryptography, and secure protocols will be covered including
-            network-layer security and various application-layer secure
-            protocols. Also covers network-side security management including
-            both passive measures, as well as active intrusion detection and
-            response.
-          </p>
-        </div>
-        <div class="item">
-          <h3 class="date">October 2024 - December 2024</h3>
-          <h4 class="code">CS-486 Data Base</h4>
-          <p>
-            fundamental concepts of database management systems using
-            primarily the relational model. Schema design and refinement.
-            Query languages. Database application development environments.
-            Overview of physical data organization, query optimization and
-            processing, physical design, security, and transactions used in
-            recovery and concurrency control.
-          </p>
-        </div>
-        <div class="item">
-          <h3 class="date">October 2024 - December 2024</h3>
-          <h4 class="code">Mth-261 Linear Algebra</h4>
-          <p>
-            Systems of linear equations, linear transformations, matrix
-            algebra, vector spaces, and determinants.
-          </p>
+        <div class="img">
+          <img src="image/picture.jpg" alt="My pictue" />
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <h3>My Skill <span>Level</span></h3>
-      <div class="-skillsprogress">
-        <div class="skill">
-          <h4>Programming Languages</h4>
-          <div class="skill-label">Java<span>50%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 50%"></div>
+    </section>
+    <!-- About me -->
+    <section id="about">
+      <div class="container">
+        <h2 class="corses-title">Courses Taken</h2>
+        <div class="corses">
+          <div class="item">
+            <h3 class="date">April 2025 - NOW</h3>
+            <h4 class="code">CS-493 Forensics</h4>
+            <p>
+              hands-on approach to the investigation of criminal incidents in
+              which computers or computer technology play a significant or
+              interesting role. Familiarization with the core computer science
+              theory and practical skills necessary to perform rudimentary
+              computer forensic investigations, understanding the role of
+              technology in investigating computer-based crime, and preparation
+              to deal with investigative bodies
+            </p>
           </div>
-          <div class="skill-label">JavaScript <span>20%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 20%"></div>
+          <div class="item">
+            <h3 class="date">April 2025 - NOW</h3>
+            <h4 class="code">CS-496 Network Security</h4>
+            <p>
+              Focus on network security including a review of various forms of
+              network attacks; a review of basic techniques in applied
+              cryptography, and secure protocols will be covered including
+              network-layer security and various application-layer secure
+              protocols. Also covers network-side security management including
+              both passive measures, as well as active intrusion detection and
+              response.
+            </p>
           </div>
-          <div class="skill-label">C++<span>66%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 66%"></div>
+          <div class="item">
+            <h3 class="date">October 2024 - December 2024</h3>
+            <h4 class="code">CS-486 Data Base</h4>
+            <p>
+              fundamental concepts of database management systems using
+              primarily the relational model. Schema design and refinement.
+              Query languages. Database application development environments.
+              Overview of physical data organization, query optimization and
+              processing, physical design, security, and transactions used in
+              recovery and concurrency control.
+            </p>
           </div>
-          <div class="skill-label">Python<span>45%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 45%"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <h4>Web Development</h4>
-          <div class="skill-label">HTML <span>50%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 50%"></div>
-          </div>
-          <div class="skill-label">CSS <span>35%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 35%"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <h4>Game Development</h4>
-          <div class="skill-label">Unity <span>20%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 20%"></div>
-          </div>
-          <div class="skill-label">Godot <span>30%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 30%"></div>
-          </div>
-          <div class="skill-label">C# <span>40%</span></div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 40%"></div>
+          <div class="item">
+            <h3 class="date">October 2024 - December 2024</h3>
+            <h4 class="code">Mth-261 Linear Algebra</h4>
+            <p>
+              Systems of linear equations, linear transformations, matrix
+              algebra, vector spaces, and determinants.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- projects -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">My Projects</h2>
-      <div id="carousel-project" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel-project" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image/chat-app.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#chat-app" aria-label="Chat application"><i
-                  class="fa-solid fa-magnifying-glass fa-xl"></i></a>
-              <a href="https://github.com/Wenkangy/chat-app " aria-label="Visit  Chat application"><i
-                  class="fa-brands fa-github fa-2xl"></i></a>
-              <p>Chat App</p>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <h3>My Skill <span>Level</span></h3>
+        <div class="-skillsprogress">
+          <div class="skill">
+            <h4>Programming Languages</h4>
+            <div class="skill-label">Java<span>50%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+            <div class="skill-label">JavaScript <span>20%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 20%"></div>
+            </div>
+            <div class="skill-label">C++<span>66%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 66%"></div>
+            </div>
+            <div class="skill-label">Python<span>45%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 45%"></div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="image/folium.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#Map-generator"
-                aria-label="Open Map Generator">
-                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-              </a>
-              <a href="https://github.com/Wenkangy/Map-generator" aria-label="Visit Map Generator on GitHub">
-                <i class="fa-brands fa-github fa-2xl"></i>
-              </a>
-              <p>Map Generator</p>
+          <div class="skill">
+            <h4>Web Development</h4>
+            <div class="skill-label">HTML <span>50%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+            <div class="skill-label">CSS <span>35%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 35%"></div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="image/airline.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#airline" aria-label="airline"><i
-                  class="fa-solid fa-magnifying-glass fa-xl"></i></a>
-              <a href="https://github.com/Wenkangy/JoyOfCodingWinter2025" aria-label="Visit airline app on GitHub">
-                <i class="fa-brands fa-github fa-2xl"></i></a>
-              <p>Flight booking</p>
+          <div class="skill">
+            <h4>Game Development</h4>
+            <div class="skill-label">Unity <span>20%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 20%"></div>
+            </div>
+            <div class="skill-label">Godot <span>30%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 30%"></div>
+            </div>
+            <div class="skill-label">C# <span>40%</span></div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 40%"></div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-project" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-project" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
+    </section>
 
-    <!-- Modals -->
-    <div class="modal fade" id="chat-app" tabindex="-1" aria-labelledby="chat-app" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="chat-app">Chat app</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- projects -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div id="carousel-project" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-project"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-project"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-project"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <div class="modal-body">
-            <div id="carousel-chat-app" class="carousel slide" data-bs-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="image/chat-app.png" class="d-block w-100" alt="chat app login page" />
-                </div>
-                <div class="carousel-item">
-                  <img src="image/chat-app2.png" class="d-block w-100" alt="char app messaging functionalities" />
-                </div>
-                <div class="carousel-item">
-                  <img src="image/chat-app3.png" class="d-block w-100" alt="chat app room creaction" />
-                </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/chat-app.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <a
+                  href="#"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#chat-app"
+                  aria-label="Chat application"
+                  ><i class="fa-solid fa-magnifying-glass fa-xl"></i
+                ></a>
+                <a
+                  href="https://github.com/Wenkangy/chat-app "
+                  aria-label="Visit  Chat application"
+                  ><i class="fa-brands fa-github fa-2xl"></i
+                ></a>
+                <p>Chat App</p>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-chat-app"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carousel-chat-app"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-            <p class="pt-3">
-              This project is an instant messaging application built using the
-              MERN stack (MongoDB, Express.js, React.js, Node.js). It provides
-              essential functionalities such as user authentication, creating
-              chat rooms, messaging, displaying conversation history, and
-              listing all chat rooms.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="Map-generator" tabindex="-1" aria-labelledby="Map-generator" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="Map-generator">Map generator</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="image/folium.png" alt="game" class="pb-3 img-fluid" />
-            <p class="pt-3">
-              This Python script extracts GPS coordinates from images and
-              generates an interactive map using Folium. It reads the EXIF
-              data of image files, decodes the GPS latitude and longitude, and
-              places markers on a map corresponding to their locations. Each
-              marker includes a thumbnail preview of the image and metadata.
-              The map is saved as an HTML file for easy viewing.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="airline" tabindex="-1" aria-labelledby="airline" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="airline">p3</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="carousel-airline" class="carousel slide" data-bs-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="image/airline.png" class="d-block w-100" alt="image of the airline app " />
-                </div>
-                <div class="carousel-item">
-                  <img src="image/airline2.png" class="d-block w-100" alt="airline app selection page" />
-                </div>
-                <div class="carousel-item">
-                  <img src="image/airline3.png" class="d-block w-100" alt="airline view page" />
-                </div>
+            <div class="carousel-item">
+              <img src="image/folium.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <a
+                  href="#"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Map-generator"
+                  aria-label="Open Map Generator"
+                >
+                  <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+                <a
+                  href="https://github.com/Wenkangy/Map-generator"
+                  aria-label="Visit Map Generator on GitHub"
+                >
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+                <p>Map Generator</p>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-airline"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carousel-airline"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-            <p class="pt-3">
-              This Android airline booking application allows users to add
-              flights, and book tickets with ease. It provides a simple and
-              intuitive interface for selecting destinations, checking flight
-              availability, and completing reservations.
-            </p>
+            <div class="carousel-item">
+              <img src="image/airline.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <a
+                  href="#"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#airline"
+                  aria-label="airline"
+                  ><i class="fa-solid fa-magnifying-glass fa-xl"></i
+                ></a>
+                <a
+                  href="https://github.com/Wenkangy/JoyOfCodingWinter2025"
+                  aria-label="Visit airline app on GitHub"
+                >
+                  <i class="fa-brands fa-github fa-2xl"></i
+                ></a>
+                <p>Flight booking</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-project"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-project"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div
+        class="modal fade"
+        id="chat-app"
+        tabindex="-1"
+        aria-labelledby="chat-app"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="chat-app">Chat app</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carousel-chat-app"
+                class="carousel slide"
+                data-bs-interval="false"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="image/chat-app.png"
+                      class="d-block w-100"
+                      alt="chat app login page"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="image/chat-app2.png"
+                      class="d-block w-100"
+                      alt="char app messaging functionalities"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="image/chat-app3.png"
+                      class="d-block w-100"
+                      alt="chat app room creaction"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-chat-app"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-chat-app"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p class="pt-3">
+                This project is an instant messaging application built using the
+                MERN stack (MongoDB, Express.js, React.js, Node.js). It provides
+                essential functionalities such as user authentication, creating
+                chat rooms, messaging, displaying conversation history, and
+                listing all chat rooms.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- contact -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <h3>via <span>Email</span> or <span>Number</span></h3>
-      <div class="row align-items-center">
-        <div class="form col-md-7 col-lg-8">
-          <form>
-            <div class="form-group">
-              <label for="name-field">Your Name</label>
-              <input type="text" name="name" id="name-field" class="form-control" required="" />
+      <div
+        class="modal fade"
+        id="Map-generator"
+        tabindex="-1"
+        aria-labelledby="Map-generator"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="Map-generator">Map generator</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="form-group">
-              <label for="email-field">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email-field" required="" />
+            <div class="modal-body">
+              <img src="image/folium.png" alt="game" class="pb-3 img-fluid" />
+              <p class="pt-3">
+                This Python script extracts GPS coordinates from images and
+                generates an interactive map using Folium. It reads the EXIF
+                data of image files, decodes the GPS latitude and longitude, and
+                places markers on a map corresponding to their locations. Each
+                marker includes a thumbnail preview of the image and metadata.
+                The map is saved as an HTML file for easy viewing.
+              </p>
             </div>
-            <div class="form-group">
-              <label for="subject-field">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject-field" required="" />
-            </div>
-            <div class="form-group">
-              <label for="message-field">Message</label>
-              <textarea class="form-control" name="message" rows="5" id="message-field" required=""></textarea>
-            </div>
-            <div class="button">
-              <button type="submit" class="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-5 col-lg-4 pb-5 text-center">
-          <img src="image/retrogaming.png" alt="Gameboy" class="img-fluid" />
-        </div>
-        <div class="contacts">
-          <div class="social-media">
-            <h4>Social Media</h4>
-            <a href="https://www.instagram.com/" class="me-2 text-reset" aria-label="Instagram"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/" class="me-2 text-reset" aria-label="facebook"><i
-                class="fab fa-facebook"></i></a>
-            <a href="https://www.x.com/" class="me-2 text-reset" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/" class="me-2 text-reset" aria-label="linkedin"><i
-                class="fab fa-linkedin"></i></a>
-          </div>
-          <div class="item email">
-            <h4>Contact me via email</h4>
-            <span>wenkang@exmaple.com</span>
-          </div>
-          <div class="item phone">
-            <h4>My phone</h4>
-            <span>+1 999 999 9999</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
 
+      <div
+        class="modal fade"
+        id="airline"
+        tabindex="-1"
+        aria-labelledby="airline"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="airline">p3</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                id="carousel-airline"
+                class="carousel slide"
+                data-bs-interval="false"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="image/airline.png"
+                      class="d-block w-100"
+                      alt="image of the airline app "
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="image/airline2.png"
+                      class="d-block w-100"
+                      alt="airline app selection page"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="image/airline3.png"
+                      class="d-block w-100"
+                      alt="airline view page"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-airline"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-airline"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <p class="pt-3">
+                This Android airline booking application allows users to add
+                flights, and book tickets with ease. It provides a simple and
+                intuitive interface for selecting destinations, checking flight
+                availability, and completing reservations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container myForm">
+        <h2 class="section-title">Contact</h2>
+        <h3>via <span>Email</span> or <span>Number</span></h3>
+        <div class="row align-items-center">
+          <div class="form col-md-7 col-lg-8">
+            <form>
+              <div class="form-group">
+                <label for="name-field">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name-field"
+                  class="form-control"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="email-field">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email-field"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject-field">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject-field"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="message-field">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  id="message-field"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="button">
+                <button type="submit" class="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 col-lg-4 pb-5 text-center">
+            <img src="image/retrogaming.png" alt="Gameboy" class="img-fluid" />
+          </div>
+          <div class="contacts">
+            <div class="social-media">
+              <h4>Social Media</h4>
+              <a
+                href="https://www.instagram.com/"
+                class="me-2 text-reset"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                class="me-2 text-reset"
+                aria-label="facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.x.com/"
+                class="me-2 text-reset"
+                aria-label="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/"
+                class="me-2 text-reset"
+                aria-label="linkedin"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="item email">
+              <h4>Contact me via email</h4>
+              <span>wenkang@exmaple.com</span>
+            </div>
+            <div class="item phone">
+              <h4>My phone</h4>
+              <span>+1 999 999 9999</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

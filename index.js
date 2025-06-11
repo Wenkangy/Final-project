@@ -37,3 +37,27 @@ function deleteWord() {
 }
 
 typeWriter();
+
+function getData(form) {
+  let formData = new FormData(form);
+  let email = document.querySelector("#email-field");
+  
+  let emailRegex =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (!emailRegex.test(email.value)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  console.log("==========Form data==========");
+  for (let pair of formData.entries()) {
+    console.log(pair[0] + ": " + pair[1]);
+  }
+  console.log(Object.fromEntries(formData));
+}
+
+document.querySelector(".myForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  getData(e.target);
+});
